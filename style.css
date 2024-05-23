@@ -17,11 +17,28 @@ body {
   height: 100vh;
   color: #333;
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
 
+.rules-section {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.rules-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.rules-text {
+  font-size: 1.6rem;
+}
 /* LAYOUT */
 main {
   position: relative;
